@@ -1,10 +1,4 @@
-//loader
-var loader = document.getElementById("preloader");
 
-
-setTimeout(function() {
-  loader.style.display = "none";
-}, 2000);
 
 //menu
 const menu = document.querySelector('#menu')
