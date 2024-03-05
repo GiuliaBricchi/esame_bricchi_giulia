@@ -1,0 +1,363 @@
+$font-family: Epilogue, sans-serif;
+$primary-color: #E4E4E4;
+$secondary-color: #183C56;
+$background-color: $primary-color;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  background-color: $primary-color;
+  font-family: $font-family;
+}
+
+#preloader{
+  background:$secondary-color url(/img/brik.png) no-repeat center center;
+  background-size:5%;
+  height:100vh;
+  width:100%;
+  position:fixed;
+  z-index:2000;
+
+
+  @media (max-width: 768px) {
+    background-size: 10%; 
+  }
+
+  @media (max-width: 480px) {
+    background-size: 15%;
+  }
+}
+
+.container-fluid {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 !important;
+  margin: 0;
+}
+
+
+
+#navbar {
+  height: 80px;
+  padding:0px;
+  margin:0px;
+  #logo{
+    padding:0px;
+  }
+  .fs-6 {
+    font-weight: bolder;
+    color: $secondary-color;
+    margin-left: 50px;
+    a {
+      text-decoration: none;
+      color: inherit; 
+    }
+  }
+}
+
+#burger {
+  height: 50px;
+  position: relative;
+  padding:0px;
+}
+
+#toggle {
+  position: relative;
+  z-index: 1;
+  color: $secondary-color;
+  padding:0px;
+}
+
+#menu {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -100vw;
+  transition: all 0.3s;
+  overflow-x: hidden;
+  ul {
+    width: 100%;
+    padding: 0; 
+    text-align: center;
+    margin: 0;
+    li {
+      list-style-type: none;
+      margin-top: 10px;
+      a {
+        text-decoration: none;
+        color: $secondary-color;
+        font-size: 3em;
+      }
+    }
+  }
+}
+
+#menu.active {
+  right: 0;
+}
+
+#boxuno {
+  height: 100vh;
+  width: 100%;
+  align-items: flex-end;
+  .col{
+    padding:0px;
+    .ego {
+      font-size: 25em;
+      font-weight: bolder;
+      color: $secondary-color;
+      margin: 0px;
+      padding:0px;
+      margin-left:50px;
+
+      @media (max-width: 1200px) {
+        font-size: 15em;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 8em;
+      }
+    }
+  }
+}
+
+#boxdue {
+  height: 600px;
+  padding: 0px;
+  #info{
+    padding: 0px;
+    align-items:center;
+    .fs-4 {
+      margin: 0px;
+    }
+    #hidden-text {
+      padding: 20px;
+      margin: 0px;
+      .d-none {
+        display: none;
+      }
+    }
+    #read-more-btn {
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+  #io{
+    height:600px;
+    padding:0px;
+    background-image:url(/img/io.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+  }
+}
+
+section {
+  height: calc(100vh - 200px);
+  margin: 0;
+  #message1 {
+    font-size: 1.5em;
+    color: $secondary-color;
+  }
+}
+
+#carouselExampleIndicators {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.carousel-indicators,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: none;
+}
+
+.carousel-indicators button {
+  background-color: none;
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+  opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 400px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+#boxtre {
+  .col-md-6 {
+    padding: 20px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    border: 2px solid transparent;
+    &:hover {
+      border-color: $primary-color; 
+    }
+  }
+
+
+  .col-6 {
+    padding: 20px;
+    cursor: pointer;
+    transition: border-color 0.3s ease; 
+    border: 2px solid transparent; 
+    &:hover {
+      border-color: $primary-color; 
+    }
+  }
+  
+  #vino, #volantino{
+    background-image: url(/img/vino.jpg);
+    height: 450px;
+    padding: 0px;
+    background-size: cover;
+    object-position: center;
+    align-items: center;
+  }
+  
+  #volantino{
+    background-image: url(/img/volantino.jpg);
+  }
+}
+
+
+
+#myForm {
+  width: 600px;
+  margin: 0 auto;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding: 20px;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+
+  div {
+    margin-bottom: 10px;
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 250px;
+      padding: 8px;
+      border: 1px solid $primary-color;
+      border-radius: 3px;
+    }
+    
+  }
+
+  button[type="submit"] {
+    width: 80px;
+    padding: 10px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+
+.scrolling-text-container {
+  overflow: hidden;
+  width: 100%;
+  height: 120px;
+  background-color: $secondary-color;
+  margin: 0px;
+  .scrolling-text {
+    font-family: $font-family;
+    color: $primary-color;
+    background-color: $secondary-color;
+    font-size: 2em;
+    margin-top: 20px;
+    font-weight: bolder;
+    white-space: nowrap;
+
+    animation: scrollText 10s linear infinite;
+
+  }
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @media (max-width: 768px) {
+
+    .scrolling-text-container {
+      height: auto;
+    }
+  }
+}
+
+#social {
+  .col {
+    width: 100vw;
+    height: 80px;
+    background-color: $secondary-color;
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: $secondary-color;
+      li {
+        margin-top: 10px;
+        a {
+          text-decoration: none;
+          color: $secondary-color;
+          font-size: 3em;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    ul li a img {
+      width: 50px;
+      padding: 15px;
+      background-color: $secondary-color;
+    }
+  }
+}

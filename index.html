@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bricchini.design</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <link href="./hamburgers.css" rel="stylesheet">
+
+    
+
+</head>
+<body>
+
+<div id="preloader">
+</div>
+
+<div class="container-fluid" id="main-container">
+
+
+    <div class="row fixed-top d-flex align-items-center" id="navbar">
+        <div class="col-10" id="logo">
+            <p class="fs-6"><a href="./index.html">bricchini.design</a></p>
+        </div>
+
+        <div class="col-2 d-flex align-items-center" id="burger">              
+            <button id="toggle" class="hamburger hamburger--stand" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>  
+            <div id="menu" class="d-flex align-items-center text-center">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>             
+        </div>
+    </div>
+
+    <div class="row d-flex text-align-center" id="boxuno">
+        <div class="col">
+            <p class="ego">Giulia.</p>
+        </div>
+    </div>
+
+
+
+    <div class="row d-flex  text-center align-items-center" id="boxdue">
+        <div class="col-md-6" id="info">
+            <p class="fs-4" id="designer">Graphic Designer</p>
+            <p id="hidden-text" class="d-none">Ciao! Sono Giulia Bricchi, ho 24 anni e sto frequentando il <strong> Biennio in Digital Design alla Laba di Brescia.</strong>
+                Mi sono diplomata al Golgi con indirizzo Tecnico Grafica per poi continuare il percorso di studi all'Accademia di Belle Arti Santa 
+                Giulia in Graphic Design a Brescia</p>
+            <button id="read-more-btn" class="btn btn-primary">Read More</button>
+        </div>
+        <div class="col-md-6" id="io"></div>
+    </div>
+
+    <section class="container-fluid d-flex justify-content-center align-items-center" id="headline">
+        <h1 class="fw-bold" id="message1">
+          <div class="d-inline-block">let's see some projects</div>
+        </h1>
+    </section>
+      
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/cinema.jpg" class="d-block w-100" alt="cinema">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/intellimech.jpg" class="d-block w-100" alt="azienda">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/mockup.jpg" class="d-block w-100" alt="mokcup">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="row" id="boxtre">
+        <div class="col-md-6" id="vino">
+          <a href="#" class="box-link"></a>
+        </div>
+        <div class="col-md-6" id="volantino">
+          <a href="#" class="box-link"></a>
+        </div>
+      </div>
+      
+
+      <form id="myForm" class="row g-3">
+        <div class="col-md-6">
+            <label for="inputNome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCognome" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="inputCognome" placeholder="Cognome">
+        </div>
+        <div class="col-md-6">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign ip</button>
+        </div>
+    </form>
+    
+      
+      
+
+      
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            +Design°Art#Culture@Photography*Design°Art#Culture@Photography*Design°Art#Culture@Photography*Design°Art#Culture@Photography*
+        </div>
+    </div>
+
+    <div class="row d-flex aling-items-center " id="social">
+        <div class="col">
+            <ul>
+                <li><a href="https://www.instagram.com/_bricchini/"><img src="./img/instagram.png"></a></li>
+                <li><a href="https://github.com/GiuliaBricchi"><img src="./img/github.png"></a></li>
+                <li><a href="mailto:bricchigiulia6@gmail.com"><img src="./img/email.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+
+
+</body>
+</html>
